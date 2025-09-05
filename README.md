@@ -53,7 +53,7 @@ Your AI Aunty embodies the classic Indian aunty traits:
 
 ## 🎨 Creator
 
-Built with love (and lots of chai ☕) by **[Aditya Sharma](https://adisharma.dev)**
+Built with love by **[Aditya Sharma](https://adisharma.dev)**
 
 *"I made this because I miss my aunties' gossip sessions, and I'm too lazy to add a database. Perfect combination!"*
 
