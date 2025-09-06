@@ -224,7 +224,7 @@ export default function Home() {
       </div>
       
       
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden flex justify-center items-center">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20"></div>
         <div className="relative px-6 py-8 text-center">
           <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4 animate-gradient-shift">
@@ -233,6 +233,23 @@ export default function Home() {
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           Your Gossip Shaheli, here to laugh, rant, and secret with you! ✨
           </p>
+        </div>
+        <div className="absolute bottom-15 left-10 hover:scale-105 transition-all duration-300">
+        <a 
+            href="https://www.producthunt.com/products/chugli-kro-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=chugli-kro-ai" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block p-2 rounded-xl hover:bg-gradient-to-r hover:from-orange-500/20 hover:to-red-500/20 hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300"
+          >
+            <img 
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1013175&theme=dark&t=1757148854722" 
+              alt="ChugliKro AI - Where gossip meets algorithms – because no secret is too small | Product Hunt" 
+              style={{width: "250px", height: "54px"}} 
+              width="250" 
+              height="54"
+              className="rounded-lg shadow-lg"
+            />
+          </a>
         </div>
       </div>
 
