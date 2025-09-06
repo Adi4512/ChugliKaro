@@ -48,7 +48,7 @@ export default function Home() {
     if (isClient) {
       return new Date().toLocaleTimeString();
     }
-    return '';
+    return '--:--:--';
   };
 
   useEffect(() => {
@@ -234,22 +234,28 @@ export default function Home() {
           Your Gossip Shaheli, here to laugh, rant, and secret with you! ✨
           </p>
         </div>
-        <div className="absolute bottom-15 left-10 hover:scale-105 transition-all duration-300">
-        <a 
-            href="https://www.producthunt.com/products/chugli-kro-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=chugli-kro-ai" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="block p-2 rounded-xl hover:bg-gradient-to-r hover:from-orange-500/20 hover:to-red-500/20 hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300"
-          >
-            <img 
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1013175&theme=dark&t=1757148854722" 
-              alt="ChugliKro AI - Where gossip meets algorithms – because no secret is too small | Product Hunt" 
-              style={{width: "250px", height: "54px"}} 
-              width="250" 
-              height="54"
-              className="rounded-lg shadow-lg"
-            />
-          </a>
+      </div>
+
+      {/* Product Hunt Badge - Mobile: between heading and chat, Desktop: at bottom */}
+      <div className="max-w-4xl mx-auto px-4 mt-6 mb-4 block md:hidden">
+        <div className="flex justify-center">
+          <div className="hover:scale-105 transition-all duration-300">
+            <a 
+              href="https://www.producthunt.com/products/chugli-kro-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=chugli-kro-ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-2 rounded-xl hover:bg-gradient-to-r hover:from-orange-500/20 hover:to-red-500/20 hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300"
+            >
+              <img 
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1013175&theme=dark&t=1757148854722" 
+                alt="ChugliKro AI - Where gossip meets algorithms – because no secret is too small | Product Hunt" 
+                style={{width: "200px", height: "43px"}} 
+                width="200" 
+                height="43"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -296,7 +302,7 @@ export default function Home() {
                       : 'bg-gray-700/50 text-gray-200 border border-gray-600/30'
                   }`}>
                     <p className="text-sm leading-relaxed">{msg.content}</p>
-                    <p className="text-xs opacity-70 mt-2">{isClient ? msg.timestamp : ''}</p>
+                    <p className="text-xs opacity-70 mt-2">{msg.timestamp || '--:--:--'}</p>
                   </div>
                 </div>
               </div>
@@ -438,6 +444,29 @@ export default function Home() {
          </p>
        </div>
      </div>  
+      </div>
+
+      {/* Product Hunt Badge - Desktop: at bottom */}
+      <div className="max-w-4xl mx-auto px-4 mt-6 mb-4 hidden md:block">
+        <div className="flex justify-center">
+          <div className="hover:scale-105 transition-all duration-300">
+            <a 
+              href="https://www.producthunt.com/products/chugli-kro-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=chugli-kro-ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-2 rounded-xl hover:bg-gradient-to-r hover:from-orange-500/20 hover:to-red-500/20 hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300"
+            >
+              <img 
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1013175&theme=dark&t=1757148854722" 
+                alt="ChugliKro AI - Where gossip meets algorithms – because no secret is too small | Product Hunt" 
+                style={{width: "250px", height: "54px"}} 
+                width="250" 
+                height="54"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </a>
+          </div>
+        </div>
       </div>
       
       <Footer />
